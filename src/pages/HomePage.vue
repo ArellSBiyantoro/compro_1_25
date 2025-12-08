@@ -1,46 +1,45 @@
 <template>
   <div class="min-h-screen" style="background-color: var(--color-white); color: var(--color-deep-black);">
     <!-- Hero Section -->
-    <section id="home" class="pt-32 pb-20 px-6">
-      <div class="max-w-6xl mx-auto">
-        <div class="grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <h1 class="text-5xl md:text-6xl font-bold mb-4" style="color: var(--color-army-dark-green); font-family: var(--font-heading);">
-              Advanced Defense & Intelligence Solutions
-            </h1>
-            <p class="text-xl mb-8 leading-relaxed" style="color: var(--color-gunmetal-grey); font-family: var(--font-body);">
-              Trusted partner in modern defense technology, serving Indonesian defense institutions and global strategic partners with innovative, reliable solutions.
-            </p>
-            <div class="flex gap-4 flex-wrap">
-              <RouterLink
-                to="/about"
-                class="px-8 py-3 rounded transition"
-                style="background-color: var(--color-army-dark-green); color: var(--color-white); border: none; font-weight: 600; font-family: var(--font-body);"
-              >
-                Learn More
-              </RouterLink>
-              <RouterLink
-                to="/contact"
-                class="px-8 py-3 rounded transition"
-                style="background-color: transparent; color: var(--color-dessert-tan); border: 2px solid var(--color-dessert-tan); font-weight: 600; font-family: var(--font-body);"
-              >
-                Contact Us
-              </RouterLink>
-            </div>
-          </div>
-          <div class="rounded-lg h-80 flex items-center justify-center border-2" style="background-color: var(--color-light-grey); border-color: var(--color-dessert-tan);">
-            <div class="text-center">
-              <div class="text-6xl mb-4">🛰️</div>
-              <p style="color: var(--color-gunmetal-grey); font-family: var(--font-body);">Defense Technology Solutions</p>
-            </div>
+    <section id="home" class="section-padding hero-section h-screen">
+      <div class="max-w-6xl">
+        <div class="max-w-2xl">
+          <h1 class="text-5xl md:text-6xl font-bold mb-4" style="color: var(--color-white); font-family: var(--font-heading);">
+            Reliable Solutions for Secure Operations
+          </h1>
+          <p class="text-xl mb-8 leading-relaxed" style="color: var(--color-white); font-family: var(--font-body);">
+            Importir resmi peralatan pertahanan dan intelijen, 
+            meningkatkan efektivitas dan kesiapsiagaan operasional.
+            <ul class="list-disc pl-6 mt-2" style="color: var(--color-white); font-family: var(--font-body);">
+              <li>Advanced Systems.</li>
+              <li>Assured Security.</li>
+              <li>Analytic System.</li>
+            </ul>
+          </p>
+          <div class="flex gap-4 flex-wrap">
+            <RouterLink
+              to="/products"
+              class="px-8 py-3 rounded transition"
+              style="background-color: var(--color-army-dark-green); color: var(--color-white); border: none; font-weight: 600; font-family: var(--font-body);"
+            >
+              <img src="/icons/phone_white.svg" alt="WhatsApp" class="inline-block h-5 w-5 mr-1.5" />
+              Hubungi Kami
+            </RouterLink>
+            <RouterLink
+              to="/products"
+              class="px-8 py-3 rounded transition"
+              style="background-color: var(--color-army-dark-green); color: var(--color-white); border: none; font-weight: 600; font-family: var(--font-body);"
+            >
+              Lihat Produk
+            </RouterLink>
           </div>
         </div>
       </div>
     </section>
 
     <!-- About Summary -->
-    <section class="py-16 px-6" style="background-color: var(--color-light-grey);">
-      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+    <section class="section-padding" style="background-color: var(--color-light-grey);">
+      <div class=" grid md:grid-cols-2 gap-10 items-center">
         <div>
           <h2 class="text-4xl font-bold mb-4" style="color: var(--color-army-dark-green); font-family: var(--font-heading);">About Us</h2>
           <p class="leading-relaxed mb-4" style="color: var(--color-deep-black); font-family: var(--font-body);">
@@ -130,6 +129,28 @@ const featuredProducts = computed(() => products.value.slice(0, 3))
 </script>
 
 <style scoped>
+  
+.hero-section {
+  position: relative;
+  background-image: url('/hero.jpg'); /* path absolut ke public */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35); /* tingkat kegelapan */
+  z-index: 1;
+}
+
+.hero-section > .max-w-6xl {
+  position: relative;
+  z-index: 1; /* konten di atas overlay */
+}
+
 .hover-link {
   transition: color 0.3s ease;
 }
