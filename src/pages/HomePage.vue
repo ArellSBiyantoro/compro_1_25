@@ -41,7 +41,8 @@
     <section class="section-padding" style="background-color: var(--color-light-grey);">
       <div class=" grid md:grid-cols-2 gap-10 items-center">
         <div>
-          <h2 class="text-4xl font-bold mb-4" style="color: var(--color-army-dark-green); font-family: var(--font-heading);">About Us</h2>
+          <p class="text-4l mb-1" style="color: var(--color-deep-black); font-family: var(--font-body);">About Us</p>
+          <h2 class="text-5xl mb-4" style="color: var(--color-army-dark-green); font-family: var(--font-heading);">PT. CIPTAGRAHA ADHI PERTIWI</h2>
           <p class="leading-relaxed mb-4" style="color: var(--color-deep-black); font-family: var(--font-body);">
             PT. CIPTAGRAHA ADHI PERTIWI is a trusted supplier of modern defense and intelligence technologies, partnering with Indonesian defense institutions and government agencies.
           </p>
@@ -142,7 +143,11 @@ const featuredProducts = computed(() => products.value.slice(0, 3))
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.35); /* tingkat kegelapan */
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.80) 40%,
+    rgba(75, 95, 70, 0.80) 100%
+  );
   z-index: 1;
 }
 

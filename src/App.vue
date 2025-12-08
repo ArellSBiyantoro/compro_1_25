@@ -3,12 +3,10 @@
     <nav class="fixed w-full top-0 z-50" style="background-color: var(--color-white);">
       <div class="nav-content px-12 py-4 flex justify-between items-center">
         <div class="logo" style="color: var(--color-army-dark-green); font-family: var(--font-heading);">
-          <img src="/logo.png" alt="Ciptagraha Logo" class="inline-block h-8" />
-          <div>
-            PT. CIPTAGRAHA
-          </div>
+          <img src="/logo.png" alt="Ciptagraha Logo" class="inline-block h-10" />
+          <img src="/logo_text.png" alt="Ciptagraha Logo" class="inline-block h-10" />
         </div>
-        <div class="hidden md:flex gap-0.5 mt-1">
+        <div class="hidden md:flex gap-0.5">
           <RouterLink to="/" class="nav hover-link" style="color: var(--color-army-dark-green);">Home</RouterLink>
           <RouterLink to="/about" class="nav hover-link" style="color: var(--color-army-dark-green);">Tentang Kami</RouterLink>
           <RouterLink to="/products" class="nav hover-link" style="color: var(--color-army-dark-green);">Produk</RouterLink>
@@ -52,11 +50,9 @@ const open = ref(false);
 
 <style scoped>
 .logo {
-  font-size: 1.5rem;
-  font-weight: normal;
   display: flex;
-  align-items: center;
-  gap: 1rem;
+  align-items: left;
+  gap: 0.7rem;
 }
 
 .nav {
