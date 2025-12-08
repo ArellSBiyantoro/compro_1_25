@@ -4,10 +4,10 @@
     <section id="home" class="section-padding hero-section h-screen">
       <div class="max-w-6xl">
         <div class="max-w-2xl">
-          <h1 class="text-5xl md:text-6xl font-bold mb-4" style="color: var(--color-white); font-family: var(--font-heading);">
+          <h1 class="text-4xl md:text-6xl font-bold mb-4" style="color: var(--color-white); font-family: var(--font-heading);">
             Reliable Solutions for Secure Operations
           </h1>
-          <p class="text-xl mb-8 leading-relaxed" style="color: var(--color-white); font-family: var(--font-body);">
+          <p class="text-l md:text-xl mb-8 leading-relaxed" style="color: var(--color-white); font-family: var(--font-body);">
             Importir resmi peralatan pertahanan dan intelijen, 
             meningkatkan efektivitas dan kesiapsiagaan operasional.
             <ul class="list-disc pl-6 mt-2" style="color: var(--color-white); font-family: var(--font-body);">
@@ -19,16 +19,16 @@
           <div class="flex gap-4 flex-wrap">
             <RouterLink
               to="/products"
-              class="px-8 py-3 rounded transition"
-              style="background-color: var(--color-army-dark-green); color: var(--color-white); border: none; font-weight: 600; font-family: var(--font-body);"
+              class="px-8 py-3 rounded transition hero-button"
+              style="background-color: var(--color-dessert-tan); color: var(--color-white); border: none; font-weight: 600; font-family: var(--font-body);"
             >
               <img src="/icons/phone_white.svg" alt="WhatsApp" class="inline-block h-5 w-5 mr-1.5" />
               Hubungi Kami
             </RouterLink>
             <RouterLink
               to="/products"
-              class="px-8 py-3 rounded transition"
-              style="background-color: var(--color-army-dark-green); color: var(--color-white); border: none; font-weight: 600; font-family: var(--font-body);"
+              class="px-8 py-3 rounded transition hero-button"
+              style="background-color: var(--color-dessert-tan); color: var(--color-white); border: none; font-weight: 600; font-family: var(--font-body);"
             >
               Lihat Produk
             </RouterLink>
@@ -38,43 +38,49 @@
     </section>
 
     <!-- About Summary -->
-    <section class="section-padding" style="background-color: var(--color-light-grey);">
-      <div class=" grid md:grid-cols-2 gap-10 items-center">
+    <section class="section-padding md:relative" style="background-color: var(--color-light-grey);">
+      <div class=" grid md:grid-cols-2 gap-10 items-top">
         <div>
-          <p class="text-4l mb-1" style="color: var(--color-deep-black); font-family: var(--font-body);">About Us</p>
-          <h2 class="text-5xl mb-4" style="color: var(--color-army-dark-green); font-family: var(--font-heading);">PT. CIPTAGRAHA ADHI PERTIWI</h2>
-          <p class="leading-relaxed mb-4" style="color: var(--color-deep-black); font-family: var(--font-body);">
-            PT. CIPTAGRAHA ADHI PERTIWI is a trusted supplier of modern defense and intelligence technologies, partnering with Indonesian defense institutions and government agencies.
+          <p class="text-l md:text-xl mb-4" style="color: var(--color-gunmetal-grey); font-family: var(--font-body);">
+            Tentang
           </p>
-          <p class="leading-relaxed" style="color: var(--color-deep-black); font-family: var(--font-body);">
-            We deliver globally standardized solutions tailored to evolving national security needs.
+          <h2 class="text-4xl md:text-6xl font-bold mb-4" style="color: var(--color-army-dark-green); font-family: var(--font-heading);">
+            PT. CIPTAGRAHA ADHI PERTIWI
+          </h2>
+          <p class="text-l md:text-xl leading-relaxed mb-4 text-justify" style="color: var(--color-gunmetal-grey); font-family: var(--font-body)">
+            Ciptagraha merupakan perusahaan yang menawarkan dan memasok produk-produk khusus yang berteknologi 
+            modern untuk mendukung tugas pokok satuan militer. Didukung dengan keberhasilan produk yang telah 
+            teruji dan digunakan oleh satuan militer diberbagai negara maju.
+          </p>
+          <p class="text-l md:text-xl leading-relaxed mb-4 text-justify" style="color: var(--color-gunmetal-grey); font-family: var(--font-body)">
+            Kami menjadi mitra tepercaya bagi institusi yang membutuhkan teknologi berkualitas global.
           </p>
           <div class="mt-6">
             <RouterLink
               to="/about"
-              class="px-6 py-3 inline-flex items-center gap-2"
-              style="background-color: var(--color-army-dark-green); color: var(--color-white); border-radius: 6px; font-weight: 600;"
+              class="direct-about px-6 py-3 inline-flex items-center gap-2 boder-1"
+              style="border: 2px solid var(--color-army-dark-green); color: var(--color-army-dark-green); border-radius: 6px; font-weight: 600;"
             >
-              Read full profile →
+              Lebih Lanjut →
             </RouterLink>
           </div>
         </div>
-        <div class="p-6 rounded-lg border-2" style="background-color: var(--color-white); border-color: var(--color-dessert-tan);">
-          <h3 class="text-2xl font-bold mb-3" style="color: var(--color-olive-military); font-family: var(--font-subheading);">Vision & Mission</h3>
-          <ul class="space-y-3" style="color: var(--color-gunmetal-grey); font-family: var(--font-body);">
-            <li>Become the most trusted defense procurement partner.</li>
-            <li>Deliver modern, innovative technical solutions.</li>
-            <li>Provide training and responsive support.</li>
-          </ul>
-          <div class="mt-4">
-            <RouterLink
-              to="/about#vision"
-              class="px-4 py-2 inline-flex items-center gap-2"
-              style="background-color: transparent; color: var(--color-dessert-tan); border: 2px solid var(--color-dessert-tan); border-radius: 6px; font-weight: 600;"
-            >
-              See details →
-            </RouterLink>
-          </div>
+        <div class="md:absolute bottom-0 right-0 z-0">
+          <img src="/img/home_about.png" alt="About" class="w-[480px] md:w-[580px]" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Partner -->
+    <section class="section-padding partner-section">
+      <div class="max-w-6xl mx-auto flex flex-col items-center text-center">
+        <div class="max-w-2xl flex flex-col items-center">
+          <p class="text-l md:text-xl leading-relaxed" 
+            style="color: var(--color-white); font-family: var(--font-body);">
+            Strategic Partner:
+          </p>
+
+          <img src="/img/blacksky.png" alt="Partners" class="w-full mt-2" />
         </div>
       </div>
     </section>
@@ -130,10 +136,14 @@ const featuredProducts = computed(() => products.value.slice(0, 3))
 </script>
 
 <style scoped>
-  
+
+/* HERO */
 .hero-section {
+  background-image: url('/hero.jpg');
+}
+
+.partner-section, .hero-section {
   position: relative;
-  background-image: url('/hero.jpg'); /* path absolut ke public */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -143,6 +153,7 @@ const featuredProducts = computed(() => products.value.slice(0, 3))
   content: "";
   position: absolute;
   inset: 0;
+  /* background: rgba(0, 0, 0, 0.65); */
   background: linear-gradient(
     135deg,
     rgba(0, 0, 0, 0.80) 40%,
@@ -156,12 +167,40 @@ const featuredProducts = computed(() => products.value.slice(0, 3))
   z-index: 1; /* konten di atas overlay */
 }
 
+.hero-button:hover {
+  background-color: var(--color-army-dark-green) !important;
+  color: var(--color-white) !important;
+}
+
 .hover-link {
   transition: color 0.3s ease;
 }
 
 .hover-link:hover {
   color: var(--color-dessert-tan) !important;
+}
+
+/* ABOUT */
+.direct-about:hover {
+  color: var(--color-dessert-tan) !important;
+  border-color: var(--color-dessert-tan) !important;
+}
+
+/* PARTNER */
+.partner-section {
+  background-image: url('/img/earth.jpg');
+}
+
+.partner-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+.partner-section > .max-w-6xl {
+  position: relative;
+  z-index: 2;
 }
 
 .product-card:hover {

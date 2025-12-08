@@ -1,4 +1,5 @@
 Hosting menggunakan IDCLOUDHOST Cloud Hosting Cpanel - Entrepreneur Pro
 
-Kurang:
+Arell Kurang:
+- Home: Section Produk, CTA
 - Kontak
