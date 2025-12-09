@@ -2,10 +2,11 @@
   <div class="min-h-screen" style="background-color: var(--color-white); color: var(--color-deep-black);">
     <nav class="fixed w-full top-0 z-50" style="background-color: var(--color-white);">
       <div class="nav-content px-12 py-4 flex justify-between items-center">
-        <div class="logo" style="color: var(--color-army-dark-green); font-family: var(--font-heading);">
+        <a href="/" class="logo flex items-center gap-2"
+          style="color: var(--color-army-dark-green); font-family: var(--font-heading);">
           <img src="/logo.png" alt="Ciptagraha Logo" class="inline-block h-10" />
           <img src="/logo_text.png" alt="Ciptagraha Logo" class="inline-block h-10" />
-        </div>
+        </a>
         <div class="hidden md:flex gap-0.5">
           <RouterLink to="/" class="nav hover-link" style="color: var(--color-army-dark-green);">Home</RouterLink>
           <RouterLink to="/about" class="nav hover-link" style="color: var(--color-army-dark-green);">Tentang Kami</RouterLink>
@@ -40,38 +41,47 @@
         <div class="grid md:grid-cols-4 gap-8 mb-8">
           <!-- Company Info -->
           <div>
-            <h3 class="font-bold mb-4" style="color: var(--color-dessert-tan); font-family: var(--font-heading);">
-              PT. CIPTAGRAHA ADHI PERTIWI
-            </h3>
-            <p class="text-sm leading-relaxed" style="color: rgba(255, 255, 255, 0.8); font-family: var(--font-body);">
+            <div class="logo flex items-center gap-2 mb-2 p-2" style="background-color: var(--color-light-grey); border-radius: 4px;">
+              <img src="/logo.png" alt="Ciptagraha Logo" class="inline-block h-10" />
+              <img src="/logo_text.png" alt="Ciptagraha Logo" class="inline-block h-10" />
+            </div>
+            <p class="text-l leading-relaxed" style="color: rgba(255, 255, 255, 0.8); font-family: var(--font-body);">
               Importir resmi peralatan pertahanan dan intelijen berkualitas global.
             </p>
           </div>
 
           <!-- Quick Links -->
           <div>
-            <h4 class="font-semibold mb-4" style="color: var(--color-white); font-family: var(--font-heading);">
+            <h4 class="text-xl font-semibold mb-4" style="color: var(--color-white); font-family: var(--font-heading);">
               Navigasi
             </h4>
-            <ul class="space-y-2">
+            <ul class="text-l space-y-2">
               <li>
-                <RouterLink to="/" class="text-sm hover-link" style="color: rgba(255, 255, 255, 0.8);">
-                  Home
+                <RouterLink to="/" style="color: rgba(255, 255, 255, 0.8);">
+                  <a>
+                    Home
+                  </a>
                 </RouterLink>
               </li>
               <li>
-                <RouterLink to="/about" class="text-sm hover-link" style="color: rgba(255, 255, 255, 0.8);">
-                  Tentang Kami
+                <RouterLink to="/about" style="color: rgba(255, 255, 255, 0.8);">
+                  <a>
+                    Tentang Kami
+                  </a>
                 </RouterLink>
               </li>
               <li>
-                <RouterLink to="/products" class="text-sm hover-link" style="color: rgba(255, 255, 255, 0.8);">
-                  Produk
+                <RouterLink to="/products" style="color: rgba(255, 255, 255, 0.8);">
+                  <a>
+                    Produk
+                  </a>
                 </RouterLink>
               </li>
               <li>
-                <RouterLink to="/contact" class="text-sm hover-link" style="color: rgba(255, 255, 255, 0.8);">
-                  Kontak
+                <RouterLink to="/contact" style="color: rgba(255, 255, 255, 0.8);">
+                  <a>
+                    Kontak
+                  </a>
                 </RouterLink>
               </li>
             </ul>
@@ -79,28 +89,42 @@
 
           <!-- Contact Info -->
           <div>
-            <h4 class="font-semibold mb-4" style="color: var(--color-white); font-family: var(--font-heading);">
+            <h4 class="text-xl font-semibold mb-4" style="color: var(--color-white); font-family: var(--font-heading);">
               Hubungi Kami
             </h4>
-            <ul class="space-y-2 text-sm" style="color: rgba(255, 255, 255, 0.8); font-family: var(--font-body);">
-              <li>Email: info@ciptagraha.com</li>
-              <li>Phone: +62 (XXX) XXXX-XXXX</li>
+            <ul class="space-y-2 text-l" style="color: rgba(255, 255, 255, 0.8); font-family: var(--font-body);">
+              <li class="flex items-center justify-left gap-4">
+                <i data-feather="mail" alt="Phone Icon" class="w-5 h-5" />
+                <a href="mailto:office@ciptagrahadp.com">
+                  office@ciptagrahadp.com
+                </a>
+              </li>
+              <li class="flex items-center justify-left gap-4">
+                <i data-feather="phone" alt="Phone Icon" class="w-5 h-5" />
+                <a
+                  href="https://wa.me/6287781234288"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  +62 877 8123 4288
+                </a>
+              </li>
             </ul>
           </div>
 
           <!-- Location -->
           <div>
-            <h4 class="font-semibold mb-4" style="color: var(--color-white); font-family: var(--font-heading);">
+            <h4 class="text-xl font-semibold mb-4" style="color: var(--color-white); font-family: var(--font-heading);">
               Lokasi
             </h4>
-            <p class="text-xs leading-relaxed mb-4" style="color: rgba(255, 255, 255, 0.8); font-family: var(--font-body);">
+            <p class="text-l leading-relaxed mb-4" style="color: rgba(255, 255, 255, 0.8); font-family: var(--font-body);">
               Adi Puri Enterprise Hub Lantai GF No. 07
               Wisma Subud, Jalan RS Fatmawati No 52
               Cilandak Barat, Jakarta 12430
             </p>
             <div class="rounded-lg overflow-hidden mb-3" style="height: 150px; width: 100%;">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0669394529435!2d106.7790594!3d-6.3028701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f0c3b3b3b3b3%3A0x2e69f0c3b3b3b3b3!2sAdi%20Puri%20Enterprise%20Hub%2C%20Wisma%20Subud%2C%20Jakarta%2012430!5e0!3m2!1sid!2sid!4v1670000000000"
+                src="https://www.google.com/maps?q=-6.2853831,106.7959918&z=17&output=embed"
                 width="100%"
                 height="100%"
                 style="border:0;"
@@ -142,11 +166,12 @@ const open = ref(false);
 }
 
 .hover-link {
-  transition: color 1s ease;
+  transition: color 0.3s ease;
 }
 
-.hover-link:hover {
-  background-color: rgba(201, 163, 115, 0.2) !important;
+.hover-link:hover, .hover-link:focus {
+  background-color: var(--color-dessert-tan) !important;
+  color: var(--color-white) !important;
 }
 
 /* Mobile menu styles */

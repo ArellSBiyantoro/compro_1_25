@@ -128,13 +128,12 @@ h6 {
 }
 
 a {
-  color: var(--color-dessert-tan);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: var(--color-olive-military);
+  color: var(--color-dessert-tan);
 }
 
 button {
