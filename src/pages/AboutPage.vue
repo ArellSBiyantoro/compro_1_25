@@ -16,7 +16,10 @@
           </p>
         </div>
         <div class="about-visual">
-          <div class="image-placeholder" aria-hidden="true"></div>
+          <div class="visual-logo">
+            <img src="/logo.png" alt="PT Ciptagraha Adhi Pertiwi logo" class="logo-mark" />
+            <img src="/logo_text.png" alt="PT Ciptagraha Adhi Pertiwi logotype" class="logo-text" />
+          </div>
         </div>
       </div>
     </section>
@@ -28,14 +31,17 @@
           <h2 class="partner-title">BlackSky Technology</h2>
           <p class="partner-desc">
             BlackSky adalah perusahaan teknologi intelijen berbasis luar angkasa. Kami tidak hanya menyediakan gambar
-            satelit, tetapi juga kecerdasan dan intelijen real-time yang telah diolah untuk mendukung pengambilan keputusan
+            satelit, tetapi juga kecerdasan dan intelijen <em>real-time</em> yang telah diolah untuk mendukung pengambilan keputusan
             yang cepat dan tepat.
           </p>
-          <p class="partner-desc">
+          <p class="partner-desc partner-desc-inline">
+            <i data-feather="shield" class="feather-inline"></i>
             Keunggulan intelijen ini menjadi alasan utama bagi sistem pertahanan di berbagai negara untuk menggunakannya.
           </p>
         </div>
-        <div class="partner-icon" aria-hidden="true">🛰️</div>
+        <div class="partner-icon" aria-hidden="true">
+          <img src="/img/blacksky.png" alt="BlackSky Technology" />
+        </div>
       </div>
     </section>
 
@@ -44,23 +50,23 @@
         <h2>Core Values</h2>
         <div class="values-grid">
           <div class="value-card">
-            <div class="value-icon">⚖️</div>
+            <div class="value-icon"><i data-feather="check-circle"></i></div>
             <div class="value-title">Operational Integrity</div>
           </div>
           <div class="value-card">
-            <div class="value-icon">🤝</div>
+            <div class="value-icon"><i data-feather="users"></i></div>
             <div class="value-title">Trusted Partnership</div>
           </div>
           <div class="value-card">
-            <div class="value-icon">🔒</div>
+            <div class="value-icon"><i data-feather="lock"></i></div>
             <div class="value-title">Security-First Mindset</div>
           </div>
           <div class="value-card">
-            <div class="value-icon">⚡</div>
+            <div class="value-icon"><i data-feather="zap"></i></div>
             <div class="value-title">Rapid Responsiveness</div>
           </div>
           <div class="value-card">
-            <div class="value-icon">🌐</div>
+            <div class="value-icon"><i data-feather="globe"></i></div>
             <div class="value-title">Global Reliability</div>
           </div>
         </div>
@@ -70,21 +76,21 @@
     <section class="vm-section" id="vision">
       <div class="container vm-grid">
         <div class="visi-box">
-          <h3>Visi</h3>
+          <h3><i data-feather="sun"></i> Visi</h3>
           <p>
             Menjadi mitra pengadaan pertahanan yang paling terpercaya dengan menyediakan produk-produk berkualitas,
             berteknologi modern, data intelijen dan sistem taktis berstandar global dalam mendukung keamanan dan
-            kesiap-siagaan nasional.
+            kesiapsiagaan nasional.
           </p>
         </div>
         <div class="misi-box">
-          <h3>Misi</h3>
+          <h3><i data-feather="crosshair"></i> Misi</h3>
           <ul class="misi-list">
-            <li>Memberikan solusi nyata dengan konsep teknik berkualitas, modern, dan inovatif sesuai kebutuhan pertahanan.</li>
-            <li>Bekerja sama dengan instansi pertahanan Indonesia (Kemhan dan TNI) untuk solusi teknik yang paling sesuai.</li>
-            <li>Menyediakan produk berteknologi canggih melalui kemitraan dengan produsen sistem pertahanan terkemuka.</li>
-            <li>Dukungan pelatihan terarah demi keberhasilan implementasi di lapangan.</li>
-            <li>Layanan yang komunikatif, cepat, dan responsif.</li>
+            <li><i data-feather="check-circle" class="misi-check"></i><span>Memberikan solusi nyata dengan konsep teknik berkualitas, modern, dan inovatif sesuai kebutuhan pertahanan.</span></li>
+            <li><i data-feather="check-circle" class="misi-check"></i><span>Bekerja sama dengan instansi pertahanan Indonesia (Kemhan dan TNI) untuk solusi teknik yang paling sesuai.</span></li>
+            <li><i data-feather="check-circle" class="misi-check"></i><span>Menyediakan produk berteknologi canggih melalui kemitraan dengan produsen sistem pertahanan terkemuka.</span></li>
+            <li><i data-feather="check-circle" class="misi-check"></i><span>Dukungan pelatihan terarah demi keberhasilan implementasi di lapangan.</span></li>
+            <li><i data-feather="check-circle" class="misi-check"></i><span>Layanan yang komunikatif, cepat, dan responsif.</span></li>
           </ul>
         </div>
       </div>
@@ -103,15 +109,17 @@
             Kami menjadi mitra tepercaya bagi institusi yang membutuhkan teknologi berkualitas global.
           </p>
           <div class="icon-row" aria-hidden="true">
-            <span>🛡️</span>
-            <span>📡</span>
-            <span>🗄️</span>
+            <i data-feather="shield"></i>
+            <i data-feather="radio"></i>
+            <i data-feather="server"></i>
           </div>
         </div>
 
         <div class="legal-card">
           <div class="legal-header">
-            <div class="legal-icon">🏢</div>
+            <div class="legal-icon">
+              <i data-feather="shield"></i>
+            </div>
             <div>
               <h4>Corporate Data</h4>
               <span>Official Information</span>
@@ -128,7 +136,7 @@
             </div>
             <div class="legal-item">
               <label>Business Number</label>
-              <div>181974</div>
+              <div>#181974</div>
             </div>
             <div class="legal-item">
               <label>Country</label>
@@ -136,8 +144,7 @@
             </div>
             <div class="legal-item">
               <label>Established</label>
-              <div class="highlight">2006</div>
-              <div class="note">(2008 Last Amendment)</div>
+              <div><span>2006</span> <span class="note">(2008 Last Amendment)</span></div>
             </div>
           </div>
         </div>
@@ -146,7 +153,15 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { onMounted, onUpdated } from 'vue';
+import feather from 'feather-icons';
+
+const applyFeather = () => feather.replace();
+
+onMounted(applyFeather);
+onUpdated(applyFeather);
+</script>
 
 <style scoped>
 .about-page {
@@ -188,6 +203,7 @@
   letter-spacing: 3px;
   font-size: 0.9rem;
   margin-bottom: 10px;
+  font-weight: 700;
 }
 
 .company-tagline {
@@ -203,13 +219,34 @@
 .about-content p {
   font-size: 1.05rem;
   margin-bottom: 18px;
+  text-align: justify;
 }
 
-.about-visual .image-placeholder {
-  width: 100%;
-  min-height: 220px;
+.about-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.visual-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0;
+  border: none;
   background: transparent;
-  border: 2px dashed var(--color-dessert-tan);
+}
+
+.logo-mark {
+  height: clamp(72px, 11vw, 128px);
+  width: auto;
+  object-fit: contain;
+}
+
+.logo-text {
+  height: clamp(46px, 9vw, 112px);
+  width: auto;
+  object-fit: contain;
 }
 
 .partner-section {
@@ -269,13 +306,37 @@
   color: #d1d5db;
   font-size: 1.05rem;
   max-width: 640px;
+  text-align: justify;
+}
+
+.partner-desc-inline {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.feather-inline {
+  width: 18px;
+  height: 18px;
+  stroke: var(--color-dessert-tan);
+  stroke-width: 2;
+  flex-shrink: 0;
+  margin-top: 2px;
 }
 
 .partner-icon {
-  font-size: clamp(4rem, 8vw, 8rem);
-  color: rgba(255, 255, 255, 0.35);
-  flex: 1 1 260px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.partner-icon img {
+  max-width: clamp(180px, 24vw, 320px);
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.18));
 }
 
 .values-section {
@@ -312,6 +373,15 @@
   font-size: 2rem;
   color: var(--color-olive-military);
   margin-bottom: 14px;
+  display: flex;
+  justify-content: center;
+}
+
+.value-icon [data-feather] {
+  width: 32px;
+  height: 32px;
+  stroke: var(--color-olive-military);
+  stroke-width: 2.2;
 }
 
 .value-title {
@@ -354,40 +424,61 @@
   font-family: var(--font-heading);
   color: var(--color-dessert-tan);
   margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .visi-box p {
   font-size: 1.05rem;
+  text-align: justify;
+}
+
+.misi-box {
+  padding-left: 24px;
 }
 
 .misi-box h3 {
   color: var(--color-army-dark-green);
   border-bottom: 3px solid var(--color-dessert-tan);
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   padding-bottom: 8px;
+}
+
+.visi-box h3 [data-feather],
+.misi-box h3 [data-feather] {
+  width: 22px;
+  height: 22px;
+  stroke: currentColor;
+  stroke-width: 2.2;
+  flex-shrink: 0;
 }
 
 .misi-list {
   list-style: none;
   margin-top: 18px;
+  padding: 0;
+  text-align: justify;
 }
 
 .misi-list li {
-  position: relative;
-  padding-left: 28px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
   margin-bottom: 16px;
   color: var(--color-gunmetal-grey);
   font-size: 1.02rem;
 }
 
-.misi-list li::before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  top: 0;
-  color: var(--color-olive-military);
-  font-size: 1.3rem;
-  line-height: 1;
+.misi-check {
+  width: 20px;
+  height: 20px;
+  stroke: var(--color-olive-military);
+  stroke-width: 2.2;
+  flex-shrink: 0;
+  margin-top: 2px;
 }
 
 .identity-section {
@@ -435,6 +526,7 @@
   color: #9ca3af;
   font-size: 1.05rem;
   margin-bottom: 14px;
+  text-align: justify;
 }
 
 .icon-row {
@@ -443,6 +535,13 @@
   margin-top: 20px;
   font-size: 1.5rem;
   color: var(--color-dessert-tan);
+}
+
+.icon-row i[data-feather] {
+  width: 28px;
+  height: 28px;
+  stroke: var(--color-dessert-tan);
+  stroke-width: 2;
 }
 
 .legal-card {
@@ -489,6 +588,13 @@
   color: var(--color-dessert-tan);
 }
 
+.legal-icon i[data-feather] {
+  width: 34px;
+  height: 34px;
+  stroke: var(--color-dessert-tan);
+  stroke-width: 2.2;
+}
+
 .legal-header h4 {
   font-family: var(--font-heading);
   color: var(--color-white);
@@ -533,14 +639,9 @@
   border-left: 4px solid var(--color-olive-military);
 }
 
-.highlight {
-  color: var(--color-dessert-tan);
-  font-size: 1.2rem;
-}
-
 .note {
-  font-size: 0.85rem;
-  color: #9ca3af;
+  font-size: 0.9rem;
+  color: var(--color-dessert-tan);
   font-style: italic;
 }
 
