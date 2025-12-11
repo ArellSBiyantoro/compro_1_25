@@ -1,11 +1,10 @@
 <template>
   <div class="min-h-screen" style="background-color: var(--color-white); color: var(--color-deep-black);">
     <nav class="fixed w-full top-0 z-50" style="background-color: var(--color-white);">
-      <div class="nav-content px-12 py-4 flex justify-between items-center">
+      <div class="nav-content px-12 py-2 flex justify-between items-center">
         <a href="/" class="logo flex items-center gap-2"
           style="color: var(--color-army-dark-green); font-family: var(--font-heading);">
-          <img src="/logo.png" alt="Ciptagraha Logo" class="inline-block h-10" />
-          <img src="/logo_text.png" alt="Ciptagraha Logo" class="inline-block h-10" />
+          <img src="/logo_.png" alt="Ciptagraha Logo" class="inline-block h-16 md:h-24" />
         </a>
         <div class="hidden md:flex gap-0.5">
           <RouterLink to="/" class="nav hover-link" style="color: var(--color-army-dark-green);">Home</RouterLink>
@@ -31,7 +30,7 @@
       </div>
     </nav>
 
-    <main class="pt-16">
+    <main class="pt-24">
       <RouterView />
     </main>
 
