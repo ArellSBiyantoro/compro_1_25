@@ -21,7 +21,6 @@
         class="defense-card"
         v-for="product in filteredProducts"
         :key="product.id"
-        @click="redirectToWhatsApp"
       >
         <div class="dc-image-container">
           <span class="dc-badge">{{ product.badge }}</span>
@@ -31,6 +30,17 @@
           <span class="dc-category">{{ product.category }}</span>
           <h3 class="dc-title">{{ product.title }}</h3>
           <p class="dc-desc">{{ product.description }}</p>
+        </div>
+        <div class="dc-contact">
+          <a
+            :href="`https://wa.me/6287781234288?text=Halo Ciptagraha, saya tertarik dan ingin mengetahui lebih lanjut mengenai ${encodeURIComponent(product.title)}`"
+            target="_blank"
+            class="px-8 py-3 rounded transition hero-button"
+            style="background-color: var(--color-dessert-tan); color: var(--color-white); border: none; font-weight: 600; font-family: var(--font-body);"
+          >
+            <i data-feather="phone" alt="WhatsApp" class="inline-block h-5 w-5 mr-1.5"></i>
+            Hubungi Kami
+          </a>
         </div>
       </article>
     </div>
@@ -44,7 +54,6 @@
 
 <script setup lang="ts">
 import { computed, ref } from 'vue';
-import { RouterLink } from 'vue-router';
 import productsData from '../data/products.json';
 
 interface Product {
@@ -68,10 +77,6 @@ const filteredProducts = computed(() => {
     )
   );
 });
-
-const redirectToWhatsApp = () => {
-  window.open('https://wa.me/6287781234288', '_blank');
-};
 </script>
 
 <style scoped>
@@ -238,11 +243,32 @@ const redirectToWhatsApp = () => {
   text-align: justify;
 }
 
+.dc-contact {
+  margin-top: 12px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.hero-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
 .catalog-cta {
-  margin: 3rem auto 0;
+  margin: 2rem auto 0;
   text-align: center;
   max-width: 720px;
-  padding: 2rem 1.5rem 0;
+  padding: 1.5rem 1.5rem 0;
 }
 
 .cta-text {
