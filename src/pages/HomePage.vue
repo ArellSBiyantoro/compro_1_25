@@ -104,12 +104,14 @@
           <div
             v-for="product in ourProducts"
             :key="product.id"
-            class="rounded-lg p-6 border-2 transition product-card"
+            class="border-2 transition product-card"
             style="background-color: var(--color-white); border-color: var(--color-dessert-tan);"
           >
-            <img :src="product.icon" :alt="product.name" class="w-full h-36 object-contain mb-2" />
-            <h3 class="text-xl font-bold mb-2" style="color: var(--color-army-dark-green); font-family: var(--font-subheading);">{{ product.name }}</h3>
-            <p class="leading-relaxed" style="color: var(--color-gunmetal-grey); font-family: var(--font-body);">{{ product.description }}</p>
+            <img :src="product.icon" :alt="product.name" class="w-full h-52 object-cover mb-2" />
+            <div class="px-6 pb-6">
+              <h3 class="text-xl font-bold mb-2" style="color: var(--color-army-dark-green); font-family: var(--font-subheading);">{{ product.name }}</h3>
+              <p class="leading-relaxed" style="color: var(--color-gunmetal-grey); font-family: var(--font-body);">{{ product.description }}</p>
+            </div>
           </div>
         </div>
       </div>
