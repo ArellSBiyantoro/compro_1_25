@@ -35,11 +35,10 @@
           <a
             :href="`https://wa.me/6287781234288?text=Halo Ciptagraha, saya tertarik dan ingin mengetahui lebih lanjut mengenai ${encodeURIComponent(product.title)}`"
             target="_blank"
-            class="px-8 py-3 rounded transition hero-button"
-            style="background-color: var(--color-dessert-tan); color: var(--color-white); border: none; font-weight: 600; font-family: var(--font-body);"
+            class=" text-sm cta-button"
           >
             <i data-feather="phone" alt="WhatsApp" class="inline-block h-5 w-5 mr-1.5"></i>
-            Hubungi Kami
+            Tanyakan Produk
           </a>
         </div>
       </article>

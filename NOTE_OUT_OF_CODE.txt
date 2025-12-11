@@ -1,5 +1,5 @@
 Hosting menggunakan IDCLOUDHOST Cloud Hosting Cpanel - Entrepreneur Pro
 
 Arell Kurang:
-- Home: running text bisa diganti section khusus
+- Home: running text bisa diganti section khusus (sementara tidak)
 - real assets
