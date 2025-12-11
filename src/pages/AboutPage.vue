@@ -50,7 +50,7 @@
         <h2>Core Values</h2>
         <div class="values-grid">
           <div class="value-card">
-            <div class="value-icon"><i data-feather="check-circle"></i></div>
+            <div class="value-icon"><i data-feather="shield"></i></div>
             <div class="value-title">Operational Integrity</div>
           </div>
           <div class="value-card">
