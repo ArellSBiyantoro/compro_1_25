@@ -17,7 +17,12 @@
     </div>
 
     <div class="defense-grid">
-      <article class="defense-card" v-for="product in filteredProducts" :key="product.id">
+      <article
+        class="defense-card"
+        v-for="product in filteredProducts"
+        :key="product.id"
+        @click="redirectToWhatsApp"
+      >
         <div class="dc-image-container">
           <span class="dc-badge">{{ product.badge }}</span>
           <img :src="`${product.image}`" :alt="product.title" class="dc-image" />
@@ -63,6 +68,10 @@ const filteredProducts = computed(() => {
     )
   );
 });
+
+const redirectToWhatsApp = () => {
+  window.open('https://wa.me/6287781234288', '_blank');
+};
 </script>
 
 <style scoped>
