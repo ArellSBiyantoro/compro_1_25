@@ -65,8 +65,8 @@
             </RouterLink>
           </div>
         </div>
-        <div class="md:absolute bottom-0 right-0 z-0">
-          <img src="/img/home_about.png" alt="About" class="w-[480px] md:w-[580px]" />
+        <div class="absolute bottom-0 right-0 z-0">
+          <img src="/img/about.png" alt="About" class="w-[0px] md:w-[580px]" />
         </div>
       </div>
     </section>
@@ -107,10 +107,16 @@
             class="border-2 transition product-card"
             style="background-color: var(--color-white); border-color: var(--color-dessert-tan);"
           >
-            <img :src="product.icon" :alt="product.name" class="w-full h-52 object-cover mb-2" />
+            <img :src="product.image" :alt="product.title" class="w-full h-52 object-cover mb-2" />
             <div class="px-6 pb-6">
-              <h3 class="text-xl font-bold mb-2" style="color: var(--color-army-dark-green); font-family: var(--font-subheading);">{{ product.name }}</h3>
-              <p class="leading-relaxed" style="color: var(--color-gunmetal-grey); font-family: var(--font-body);">{{ product.description }}</p>
+              <span class="text-sm mb-2" style="color: var(--color-gunmetal-grey); font-family: var(--font-body);">{{ product.badge }}</span>
+              <h3 class="text-xl font-bold mb-2" style="color: var(--color-army-dark-green); font-family: var(--font-subheading);">{{ product.title }}</h3>
+              <p class="leading-relaxed mb-2" style="color: var(--color-gunmetal-grey); font-family: var(--font-body);">
+                {{ product.description.length > 150 ? product.description.slice(0, 150) + '...' : product.description }}
+              </p>
+              <a href="/products" class="text-sm">
+                Lebih lanjut →
+              </a>
             </div>
           </div>
         </div>
@@ -176,21 +182,18 @@
 
 <script setup lang="ts">
 import { computed, ref } from 'vue'
+import productsData from '../data/products.json';
 
-const products = ref([
-  { id: 1, 
-    icon: '/products/1.png', 
-    name: 'High-Precision Earth Observation Satellite', 
-    description: 'Sistem satelit presisi tinggi ini dirancang untuk memaksimalkan efisiensi operasional dan melindungi nilai investasi Anda secara total.' },
-  { id: 2, 
-    icon: '/products/2.png', 
-    name: 'Satellite Ground Station Antenna System', 
-    description: 'Eliminasi risiko hilangnya data dan pastikan kendali total atas aset orbit Anda. Sistem ini dirancang untuk menjamin integritas komunikasi dan melindungi nilai operasional misi secara absolut.' },
-  { id: 3, 
-    icon: '/products/3.png', 
-    name: 'Lawful Interception Management System', 
-    description: 'Platform ini menjembatani standar hukum global dan performa jaringan, mengonversi kewajiban kepatuhan menjadi aset keamanan yang tangguh.' },
-  ])
+interface Product {
+  id: number;
+  badge: string;
+  category: string;
+  title: string;
+  description: string;
+  image: string;
+}
+
+const products = ref<Product[]>(productsData);
 
 const ourProducts = computed(() => products.value.slice(0, 3))
 
