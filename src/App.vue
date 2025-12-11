@@ -2,9 +2,10 @@
   <div class="min-h-screen" style="background-color: var(--color-white); color: var(--color-deep-black);">
     <nav class="fixed w-full top-0 z-50" style="background-color: var(--color-white);">
       <div class="nav-content px-12 py-2 flex justify-between items-center">
-        <a href="/" class="logo flex items-center gap-2"
+        <a href="/" class="logo flex items-center"
           style="color: var(--color-army-dark-green); font-family: var(--font-heading);">
-          <img src="/logo_.png" alt="Ciptagraha Logo" class="inline-block h-16 md:h-20" />
+          <img src="/logo.png" alt="Ciptagraha Logo" class="inline-block h-12 md:h-16" />
+          <img src="/cg.png" alt="Ciptagraha Logo" class="inline-block h-12 md:h-16" />
         </a>
         <div class="hidden md:flex gap-0.5">
           <RouterLink to="/" class="nav hover-link" style="color: var(--color-army-dark-green);">Home</RouterLink>
@@ -30,7 +31,7 @@
       </div>
     </nav>
 
-    <main class="pt-20">
+    <main class="pt-16">
       <RouterView />
     </main>
 
@@ -156,7 +157,7 @@ const open = ref(false);
 .logo {
   display: flex;
   align-items: left;
-  gap: 0.7rem;
+  gap: 0.2rem;
 }
 
 .nav {
