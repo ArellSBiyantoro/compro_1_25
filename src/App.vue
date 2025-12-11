@@ -4,7 +4,7 @@
       <div class="nav-content px-12 py-2 flex justify-between items-center">
         <a href="/" class="logo flex items-center gap-2"
           style="color: var(--color-army-dark-green); font-family: var(--font-heading);">
-          <img src="/logo_.png" alt="Ciptagraha Logo" class="inline-block h-16 md:h-24" />
+          <img src="/logo_.png" alt="Ciptagraha Logo" class="inline-block h-16 md:h-20" />
         </a>
         <div class="hidden md:flex gap-0.5">
           <RouterLink to="/" class="nav hover-link" style="color: var(--color-army-dark-green);">Home</RouterLink>
@@ -30,7 +30,7 @@
       </div>
     </nav>
 
-    <main class="pt-24">
+    <main class="pt-20">
       <RouterView />
     </main>
 
@@ -192,7 +192,7 @@ const open = ref(false);
 
 @media (max-width: 768px) {
   .nav-content {
-    padding: 1.5rem;
+    padding: 0.5rem 1.5rem;
   }
 }
 
