@@ -2,8 +2,8 @@
   <div class="min-h-screen" style="background-color: var(--color-white); color: var(--color-deep-black);">
     <nav class="fixed w-full top-0 z-50" style="background-color: var(--color-white);">
       <div class="nav-content px-12 py-2 flex justify-between items-center">
-        <a href="/" class="logo flex items-center"
-          style="color: var(--color-army-dark-green); font-family: var(--font-heading);">
+        <a href="/" class="logo flex items-center p-0.5 rounded-md"
+          style="color: var(--color-army-dark-green); font-family: var(--font-heading); background-color: var(--color-white);">
           <img src="/logo.png" alt="Ciptagraha Logo" class="inline-block h-12 md:h-16" />
           <img src="/cg.png" alt="Ciptagraha Logo" class="inline-block h-12 md:h-16" />
         </a>
